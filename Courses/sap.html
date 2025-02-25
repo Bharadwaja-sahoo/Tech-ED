@@ -35,65 +35,6 @@
     <!-- Template Style -->
     <link rel="stylesheet" href="../Assets/files/style.css">
     <style>
-        @font-face {
-            font-family: monta;
-            src: url(../Assets/font/Montserrat-Light.ttf);
-        }
-
-        .nav-title {
-            position: relative;
-        }
-
-        .nav-title:after {
-            content: "";
-            position: absolute;
-            display: block;
-            width: 50px;
-            height: 3px;
-            background: #21c87a;
-            margin: auto;
-        }
-
-        .midSaleBg {
-            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-            background-size: 400% 400%;
-            animation: gradient 15s ease infinite;
-        }
-
-        @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-
-        .footer-title {
-            border-bottom: 1px solid #333;
-        }
-
-        .social_icon {
-            min-width: 50px;
-            min-height: 50px;
-            background: #252525;
-        }
-
-        .modal-content {
-            backdrop-filter: blur(16px);
-            background-color: #ffffff61;
-            border: 1px solid #fff;
-        }
-
-        label {
-            font-weight: normal;
-        }
-
         .header.default-transparent {
             position: relative;
             width: 100%;
@@ -105,7 +46,6 @@
             top: 0;
             z-index: 3;
             width: 100%;
-            background-color: #1c1a1f;
             -webkit-box-shadow: 0px 3px 4px 0px rgba(28, 26, 31, 0.1);
             box-shadow: 0px 3px 4px 0px rgba(28, 26, 31, 0.1);
             padding: 0px;
@@ -117,7 +57,6 @@
         }
 
         .bg-overlay-black-90:before {
-            background: rgba(28, 26, 31, 0.9);
             content: "";
             height: 100%;
             left: 0;
@@ -125,34 +64,6 @@
             top: 0;
             width: 100%;
             z-index: 0;
-        }
-
-        .modal-body label {
-            color: #fff;
-        }
-    </style>
-    <style>
-        /* Loader styles */
-        #loader {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-        }
-
-        .spinner-border {
-            width: 3rem;
-            height: 3rem;
-        }
-
-        body.loading {
-            overflow: hidden;
         }
     </style>
 </head>
@@ -168,10 +79,10 @@
 
     <!--=================================
     Header -->
-    <div class="align-items-center d-flex justify-content-center midSaleBg px-4 py-1 text-white">
+    <!-- <div class="align-items-center d-flex justify-content-center midSaleBg px-4 py-1 text-white">
         <span class="me-2">Save Extra Cost & Increase Your ROI </span> <a href="#" class="btn btn-sm btn-warning"
             style="white-space: nowrap;" data-bs-target="#InquiryModal" data-bs-toggle="modal">Grab it now</a>
-    </div>
+    </div> -->
     <header class="header header-sticky default-transparent default-transparent-03">
         <nav class="navbar navbar-static-top navbar-expand-lg px-3 px-md-5">
             <div class="container-fluid position-relative px-0">
@@ -342,7 +253,7 @@
                     </div>
                 </div>
                 <div class="col-md-7 col-xl-8 space-sm-pt">
-                    <h2>SAP</h2>
+                    <h2 class="text-white">SAP</h2>
                     <span class="text-primary lead fw-bold">Streamline business processes with SAP enterprise solutions.</span>
                     <p>Advance your career with our SAP course. SAP is one of the most powerful enterprise resource planning (ERP) systems, widely used by organizations to manage business operations. This course is designed to provide you with a strong foundation in SAP, enabling you to leverage its various modules to streamline business processes.</p>
                     <p>The course covers a wide range of topics, starting with the basics of SAP navigation and system architecture. You’ll gain in-depth knowledge of key SAP modules such as SAP MM (Materials Management), SAP SD (Sales and Distribution), SAP FICO (Financial Accounting and Controlling), and SAP HCM (Human Capital Management). Throughout the program, you’ll learn how to configure, implement, and optimize business processes within these modules.</p>
@@ -368,9 +279,9 @@
     <!--=================================
     Footer -->
     <footer class="position-relative">
-        <div class="footer_shape">
+        <!-- <div class="footer_shape">
             <img src="../Assets/images/footer-bg.webp" class="w-100" alt="foot-top">
-        </div>
+        </div> -->
         <div class="footer_wrapper" style="background: #1a1a1a;">
             <div class="container-md pt-5">
                 <div class="row pb-5 pt_80 bottom_line position-relative">

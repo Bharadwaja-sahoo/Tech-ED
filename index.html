@@ -3,10 +3,8 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
   <meta name="keywords" content="HTML5 Template">
   <meta name="description" content="Tech ED : Shaping the Future">
-  <meta name="author" content="potenzaglobalsolutions.com">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Tech ED : Shaping the Future</title>
   <!-- icon -->
@@ -39,436 +37,9 @@
       clip: rect(0, 1519.2000732421875px, 746px, 0);
     }
   </style>
-  <style>
-    @font-face {
-      font-family: ampher;
-      src: url(./Assets/font/Ampher.ttf);
-    }
-
-    @font-face {
-      font-family: monta;
-      src: url(./Assets/font/Montserrat-Light.ttf);
-    }
-
-    .nav-title,
-    .title {
-      position: relative;
-    }
-
-    .title:after {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 50px;
-      height: 3px;
-      background: #21c87a;
-      top: 100%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    .nav-title:after {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 50px;
-      height: 3px;
-      background: #21c87a;
-      margin: auto;
-    }
-
-    .midSaleBg {
-      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-      background-size: 400% 400%;
-      animation: gradient 15s ease infinite;
-    }
-
-    @keyframes gradient {
-      0% {
-        background-position: 0% 50%;
-      }
-
-      50% {
-        background-position: 100% 50%;
-      }
-
-      100% {
-        background-position: 0% 50%;
-      }
-    }
-
-    .footer-title {
-      border-bottom: 1px solid #333;
-    }
-
-    .social_icon {
-      min-width: 50px;
-      min-height: 50px;
-      background: #252525;
-    }
-
-    .modal-content {
-      backdrop-filter: blur(16px);
-      background-color: #ffffff61;
-      border: 1px solid #fff;
-    }
-
-    label {
-      font-weight: normal;
-    }
-
-    .modal-body label {
-      color: #fff;
-    }
-
-    /*--------------------------------------------------------------
-        # Features Cards Section
-        --------------------------------------------------------------*/
-    .features-cards {
-      --default-color: #555;
-      --heading-color: #333;
-    }
-
-    .features-cards .feature-box {
-      height: 100%;
-      padding: 40px 30px;
-      border-radius: 10px;
-    }
-
-    .features-cards .feature-box i {
-      font-size: 44px;
-      display: inline-block;
-      line-height: 0;
-      color: var(--accent-color);
-      margin-bottom: 20px;
-    }
-
-    .features-cards .feature-box h4 {
-      font-size: 20px;
-      font-weight: 700;
-      margin: 0 0 10px 0;
-    }
-
-    .features-cards .feature-box p {
-      font-size: 15px;
-      margin-bottom: 0;
-    }
-
-    .features-cards .feature-box.orange {
-      background-color: #fff3e2;
-    }
-
-    .features-cards .feature-box.orange i {
-      color: #edb86e;
-    }
-
-    .features-cards .feature-box.blue {
-      background-color: #deedfd;
-    }
-
-    .features-cards .feature-box.blue i {
-      color: #20a5f8;
-    }
-
-    .features-cards .feature-box.green {
-      background-color: #d5f1e4;
-    }
-
-    .features-cards .feature-box.green i {
-      color: #48c88a;
-    }
-
-    .features-cards .feature-box.red {
-      background-color: #fdeded;
-    }
-
-    .features-cards .feature-box.red i {
-      color: #f28484;
-    }
-
-    /*--------------------------------------------------------------
-# Features Section
---------------------------------------------------------------*/
-    :root {
-      --background-color: #ffffff;
-      --default-color: #212529;
-      --heading-color: #2d465e;
-      --accent-color: #21c87a;
-      --surface-color: #ffffff;
-      --contrast-color: #ffffff;
-    }
-
-    .section-title h2 {
-      font-size: 32px;
-      font-weight: 700;
-      margin-bottom: 20px;
-      padding-bottom: 20px;
-      position: relative;
-    }
-
-    .section-title h2:after {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 50px;
-      height: 3px;
-      background: #21c87a;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      margin: auto;
-    }
-
-    .features .nav-tabs {
-      border: 0;
-      background-color: color-mix(in srgb, var(--default-color), transparent 96%);
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50px;
-      padding: 6px;
-      width: auto;
-    }
-
-    .features .nav-item {
-      margin: 0;
-      padding: 0 5px 0 0;
-    }
-
-    .features .nav-item:last-child {
-      padding-right: 0;
-    }
-
-    .features .nav-link {
-      background-color: none;
-      color: var(--heading-color);
-      padding: 5px 30px;
-      transition: 0.3s;
-      border-radius: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      height: 100%;
-      border: 0;
-      margin: 0;
-    }
-
-    @media (max-width: 468px) {
-      .features .nav-link {
-        padding: 8px 20px;
-      }
-    }
-
-    .features .nav-link i {
-      padding-right: 15px;
-      font-size: 48px;
-    }
-
-    .features .nav-link h4 {
-      font-size: 14px;
-      font-weight: 500;
-      margin: 0;
-    }
-
-    .features .nav-link:hover {
-      border-color: color-mix(in srgb, var(--default-color), transparent 80%);
-    }
-
-    .features .nav-link:hover h4 {
-      color: #FFF;
-    }
-
-    .features .nav-link.active {
-      background-color: var(--accent-color);
-      border-color: var(--accent-color);
-    }
-
-    .features .nav-link.active h4 {
-      color: var(--contrast-color);
-    }
-
-    .features .tab-content {
-      margin-top: 30px;
-    }
-
-    .features .tab-pane h3 {
-      color: var(--heading-color);
-      font-weight: 700;
-      font-size: 32px;
-      position: relative;
-      margin-bottom: 20px;
-      padding-bottom: 20px;
-    }
-
-    .features .tab-pane h3:after {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 60px;
-      height: 3px;
-      background: var(--accent-color);
-      left: 0;
-      bottom: 0;
-    }
-
-    .features .tab-pane ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .features .tab-pane ul li {
-      padding-top: 10px;
-    }
-
-    .features .tab-pane ul i {
-      font-size: 20px;
-      padding-right: 4px;
-      color: var(--accent-color);
-    }
-
-    .features .tab-pane p:last-child {
-      margin-bottom: 0;
-    }
-
-    /*--------------------------------------------------------------
-        # Clients Section
-        --------------------------------------------------------------*/
-    .clients {
-      padding: 12px 0;
-    }
-
-    .clients .swiper {
-      padding: 10px 0;
-    }
-
-    .clients .swiper-wrapper {
-      height: auto;
-    }
-
-    .clients .swiper-slide img {
-      transition: 0.3s;
-      padding: 0 10px;
-    }
-
-    .clients .swiper-slide img:hover {
-      transform: scale(1.1);
-    }
-
-    /* PRODUCT ABOUT */
-
-    .services .icon-box {
-      padding: 30px;
-      position: relative;
-      overflow: hidden;
-      margin: 0 0 40px 0;
-      background: #fff;
-      /* box-shadow: 0 5px 26px 0 rgba(68, 88, 144, 0.14); */
-      box-shadow: 0 5px 26px 0 rgb(68 88 144 / 39%);
-      transition: all 0.3s ease-in-out;
-      text-align: center;
-      border: 2px solid #fff;
-      border-radius: 15px;
-    }
-
-    .services .icon {
-      margin: 0 auto 20px auto;
-      display: inline-block;
-      text-align: center;
-      padding: 15px;
-      border-radius: 50%;
-      box-shadow: 0 5px 26px 0 rgb(68 88 144 / 39%);
-    }
-
-    .services .icon i {
-      font-size: 36px;
-      line-height: 1;
-    }
-
-    .services .title {
-      font-weight: 700;
-      margin-bottom: 15px;
-      font-size: 18px;
-    }
-
-    .services .title a {
-      color: #111;
-    }
-
-    .services .description {
-      font-size: 15px;
-      line-height: 28px;
-      margin-bottom: 0;
-    }
-
-
-    .services .icon-box-pink .icon i {
-      color: #ff689b;
-    }
-
-    .services .icon-box-pink:hover {
-      border-color: #ff689b;
-    }
-
-
-
-    .services .icon-box-cyan .icon i {
-      color: #3fcdc7;
-    }
-
-    .services .icon-box-cyan:hover {
-      border-color: #3fcdc7;
-    }
-
-
-
-    .services .icon-box-green .icon i {
-      color: #41cf2e;
-    }
-
-    .services .icon-box-green:hover {
-      border-color: #41cf2e;
-    }
-
-
-
-    .services .icon-box-blue .icon i {
-      color: #2282ff;
-    }
-
-    .services .icon-box-blue:hover {
-      border-color: #2282ff;
-    }
-
-    /* PRODUCT ABOUT */
-  </style>
-  <style>
-    /* Loader styles */
-    #loader {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #ffffff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-    }
-
-    .spinner-border {
-      width: 3rem;
-      height: 3rem;
-    }
-
-    body.loading {
-      overflow: hidden;
-    }
-  </style>
 </head>
 
-<body class="bg-light">
+<body>
   <!-- Loader -->
   <div id="loader">
     <div class="spinner-border text-primary" role="status">
@@ -481,10 +52,10 @@
 
   <!--=================================
     Header -->
-  <div class="align-items-center d-flex justify-content-center midSaleBg px-4 py-1 text-white">
+  <!-- <div class="align-items-center d-flex justify-content-center midSaleBg px-4 py-1 text-white">
     <span class="me-2">Save Extra Cost & Increase Your ROI </span> <a href="#" class="btn btn-sm btn-warning"
       style="white-space: nowrap;" data-bs-target="#InquiryModal" data-bs-toggle="modal">Grab it now</a>
-  </div>
+  </div> -->
   <header class="header header-sticky default-transparent default-transparent-03">
     <nav class="navbar navbar-static-top navbar-expand-lg px-3 px-md-5">
       <div class="container-fluid position-relative px-0">
@@ -644,17 +215,18 @@
 
   <!--=================================
     Banner -->
-  <section class="banner-05 bg-holder space-ptb" style="background-image: url(./Assets/images/hero.jpg);">
+  <section class="banner-05 bg-holder space-ptb" style="background-image: url(./Assets/images/main_back.png);">
     <div class="container">
       <div class="row">
         <div class="col-md-8 offset-md-2 position-relative">
           <div class="content text-center" style="margin-top: -25px;">
             <h1 style="font-family: monta;" data-aos="fade-up" data-aos-delay="100">Tech ED</h1>
             <h6 class="mb-0" data-aos="fade-up" data-aos-delay="200">Shaping the Future..</h6>
-            <h1 class="mb-0" data-aos="fade-up" data-aos-delay="300">Education your door to the future</h1>
-            <a class="btn btn-md btn-primary mt-3" href="#"
-              style="border-radius: 5px; border: 1px solid #fff; padding: 10px 20px;" data-aos="fade-up"
-              data-aos-delay="400">Learn more</a>
+            <h1 class="mb-3" data-aos="fade-up" data-aos-delay="300">Education your door to the future</h1>
+            <p class="mb-5" data-aos="fade-up" data-aos-delay="400" style="font-size: 18px;">At TECH ED you will not just get the best theoretical education, but we will also give you the required skills, and industry exposure to be successful in your field.</p>
+            <div class="hero_btn index_btn mt-4" data-aos="fade-up" data-aos-delay="500">
+              <a class="button text-white" href="./Pages/course.html" style="cursor: pointer;">Know More <img src="./Assets/images/index_white.svg"></a>
+            </div>
           </div>
         </div>
       </div>
@@ -1886,7 +1458,7 @@
           </div>
         </div>
         <div class="col-lg-6" data-aos="fade-left">
-          <div class="bg-primary bg-overlay-right-100 p-3 p-sm-4 p-xl-5 rounded-start">
+          <div class="bg-overlay-right-100 p-3 p-sm-4 p-xl-5 rounded-start" style="background-color: #000;">
             <div class="m-2">
               <div class="d-flex align-items-center mb-3">
                 <i class="fa-solid fa-book fa-4x text-white me-4"></i>
@@ -1909,16 +1481,15 @@
 
   <!--=================================
     Let's Talk-->
-  <section class="overflowx-h container-fluid py-5">
+  <section class="container-fluid py-5" style="overflow: hidden;">
     <div class="d-flex align-items-center justify-content-center text-white text-center rounded" data-aos="fade-up"
-      style="height: 300px; background-image: linear-gradient(0deg, #000, #21c87a,#21c87a); background-position: center top; background-size: cover; background-repeat: no-repeat;">
+      style="height: 300px; background-image: linear-gradient(5deg, #000, #04042c,#04042c,#000); background-position: center top; background-size: cover; background-repeat: no-repeat; ">
       <div>
         <p class="fs-5">Want to work with us? Let’s talk</p>
-        <h1 class="display-5">solsteched@gmail.com</h1>
-        <a class="btn btn-light mt-3" href="mailto:solsteched@gmail.com"
-          style="border-radius: 5px; border: 1px solid #fff;padding: 10px 30px;">
-          Know More
-        </a>
+        <h1 class="display-5 text-white">solsteched@gmail.com</h1>
+        <div class="hero_btn index_btn mt-4">
+          <a class="button text-white" href="mailto:solsteched@gmail.com" style="cursor: pointer;">Know More <img src="./Assets/images/index_white.svg"></a>
+        </div>
       </div>
     </div>
   </section>
@@ -1927,9 +1498,94 @@
 
 
   <!--=================================
+  Testimonials -->
+  <section class="p-5" style="background: linear-gradient(90.02deg, #002A7B 7.51%, #002A7B 98.23%);">
+    <div class="container" data-aos="fade-up">
+      <div class="row">
+        <div class="col-md-8 offset-md-2 text-center">
+          <div class="owl-carousel testimonial-style-02" data-nav-arrow="true" data-nav-dots="false" data-items="1"
+            data-lg-items="1" data-md-items="1" data-sm-items="1" data-space="0" data-autoheight="true">
+            <div class="item">
+              <div class="testimonial-item">
+                <div class="author-img">
+                  <img src="./Assets/images/testimonial1.jpg" alt="">
+                </div>
+                <div class="testimonial-content">
+                  <p>We were treated like royalty. Needless to say we are extremely satisfied with the results. Thank
+                    you for making it painless, pleasant and most of all hassle free! It fits our needs perfectly.</p>
+                </div>
+                <div class="testimonial-author">
+                  <div class="testimonial-name">
+                    <p class="mb-1 text-dark fw-bold">Michael Bean</p>
+                    <small>Web Developer</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimonial-item">
+                <div class="author-img">
+                  <img src="./Assets/images/testimonial2.jpg" alt="">
+                </div>
+                <div class="testimonial-content">
+                  <p>I have gotten at least 50 times the value from Guruma. I will let my mum know about this, she could
+                    really make use of Guruma! Wow what great service, I love it! Guruma is the real deal!</p>
+                </div>
+                <div class="testimonial-author">
+                  <div class="testimonial-name">
+                    <p class="mb-1 text-dark fw-bold">Mariquilla V.</p>
+                    <small>Production Manager</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimonial-item">
+                <div class="author-img">
+                  <img src="./Assets/images/testimonial3.jpg" alt="">
+                </div>
+                <div class="testimonial-content">
+                  <p>We've seen amazing results already. Since I invested in Guruma I made over 100,000 dollars profits.
+                    It's the perfect solution for our business. I was amazed at the quality of Guruma.</p>
+                </div>
+                <div class="testimonial-author">
+                  <div class="testimonial-name">
+                    <p class="mb-1 text-dark fw-bold">Fern W.</p>
+                    <small>Vetrov Systems Development</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimonial-item">
+                <div class="author-img">
+                  <img src="./Assets/images/testimonial4.jpg" alt="">
+                </div>
+                <div class="testimonial-content">
+                  <p>We've seen amazing results already. Since I invested in Guruma I made over 100,000 dollars profits.
+                    It's the perfect solution for our business. I was amazed at the quality of Guruma.</p>
+                </div>
+                <div class="testimonial-author">
+                  <div class="testimonial-name">
+                    <p class="mb-1 text-dark fw-bold">Fern W.</p>
+                    <small>Vetrov Systems Development</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--=================================
+  Testimonials -->
+
+
+  <!--=================================
     Client Logo -->
-  <section class="overflowx-h mb-5">
-    <div class="container">
+  <section class="overflowx-h p-5">
+    <div class="container" data-aos="fade-up">
       <div class="row justify-content-center text-center">
         <div class="col-lg-12 mb-4">
           <div class="section-title">
@@ -1963,9 +1619,6 @@
             <div class="item">
               <a href="#"><img class="img-fluid" src="./Assets/images/clients/client-7.png" alt=""></a>
             </div>
-            <div class="item">
-              <a href="#"><img class="img-fluid" src="./Assets/images/clients/client-8.png" alt=""></a>
-            </div>
           </div>
         </div>
       </div>
@@ -1979,9 +1632,9 @@
   <!--=================================
     Footer -->
   <footer class="position-relative">
-    <div class="footer_shape">
+    <!-- <div class="footer_shape">
       <img src="./Assets/images/footer-bg.webp" class="w-100" alt="foot-top">
-    </div>
+    </div> -->
     <div class="footer_wrapper" style="background: #1a1a1a;">
       <div class="container-md pt-5">
         <div class="row pb-5 pt_80 bottom_line position-relative">

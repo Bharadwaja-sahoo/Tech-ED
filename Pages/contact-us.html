@@ -37,66 +37,6 @@
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <style>
-        @font-face {
-            font-family: monta;
-            src: url(../Assets/font/Montserrat-Light.ttf);
-        }
-
-        .nav-title{
-            position: relative;
-        }
-
-        .nav-title:after {
-            content: "";
-            position: absolute;
-            display: block;
-            width: 50px;
-            height: 3px;
-            background: #21c87a;
-            margin: auto;
-        }
-
-        .midSaleBg {
-            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-            background-size: 400% 400%;
-            animation: gradient 15s ease infinite;
-        }
-
-        @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-
-        .footer-title {
-            border-bottom: 1px solid #333;
-        }
-
-        .social_icon {
-            min-width: 50px;
-            min-height: 50px;
-            background: #252525;
-        }
-
-        .modal-content {
-            backdrop-filter: blur(16px);
-            background-color: #ffffff61;
-            border: 1px solid #fff;
-        }
-
-        label {
-            font-weight: normal;
-            /* color: #fff; */
-        }
-
         .header.default-transparent {
             position: relative;
             width: 100%;
@@ -108,7 +48,6 @@
             top: 0;
             z-index: 3;
             width: 100%;
-            background-color: #1c1a1f;
             -webkit-box-shadow: 0px 3px 4px 0px rgba(28, 26, 31, 0.1);
             box-shadow: 0px 3px 4px 0px rgba(28, 26, 31, 0.1);
             padding: 0px;
@@ -120,7 +59,6 @@
         }
 
         .bg-overlay-black-90:before {
-            background: rgba(28, 26, 31, 0.9);
             content: "";
             height: 100%;
             left: 0;
@@ -129,33 +67,8 @@
             width: 100%;
             z-index: 0;
         }
-
-        .modal-body label {
-            color: #fff;
-        }
-    </style>
-    <style>
-        /* Loader styles */
-        #loader {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-        }
-    
-        .spinner-border {
-            width: 3rem;
-            height: 3rem;
-        }
-    
-        body.loading {
-            overflow: hidden;
+        .form-label {
+          color: #fff;
         }
     </style>
 </head>    
@@ -170,10 +83,10 @@
     
     <!--=================================
     Header -->
-    <div class="align-items-center d-flex justify-content-center midSaleBg px-4 py-1 text-white">
+    <!-- <div class="align-items-center d-flex justify-content-center midSaleBg px-4 py-1 text-white">
         <span class="me-2">Save Extra Cost & Increase Your ROI </span> <a href="#" class="btn btn-sm btn-warning"
             style="white-space: nowrap;" data-bs-target="#InquiryModal" data-bs-toggle="modal">Grab it now</a>
-    </div>
+    </div> -->
     <header class="header header-sticky default-transparent default-transparent-03">
         <nav class="navbar navbar-static-top navbar-expand-lg px-3 px-md-5">
             <div class="container-fluid position-relative px-0">
@@ -367,13 +280,16 @@
                   <label class="form-label">Message</label>
                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
                 </div>
-                <div class="mb-3 col-sm-12">
+                <!-- <div class="mb-3 col-sm-12">
                   <button type="submit" class="btn btn-primary">Send us</button>
+                </div> -->
+                <div class="hero_btn index_btn mb-3">
+                  <a class="button text-white" style="cursor: pointer;">Send Us <img src="../Assets/images/index_white.svg"></a>
                 </div>
               </form>
             </div>
             <div class="col-md-3">
-              <h4 class="mb-4">Contact Detail</h4>
+              <h4 class="mb-4 text-white">Contact Detail</h4>
               <p class="mb-2">211, 3rd Floor, 2nd Main Rd, above apollo dental Centre, East of NGEF Layout, Kasturi Nagar, Bengaluru, Karnataka 560043</p>
               <p class="mb-2"><b class="text-dark">Call us:</b>  9949185570</p>
               <p class="mb-4"><b class="text-dark">Mail us:</b>  solsteched@gmail.com</p>
@@ -398,7 +314,7 @@
     <section class="mt-5 mb-5" style="overflow: hidden;">
         <div class="container" data-aos="fade-up">
           <div class="row justify-content-center">
-            <div class="col-md-8 text-center">
+            <div class="col-md-8 text-center mb-3">
               <div class="section-title">
                 <h2>Additional Contact Info</h2>
               </div>
@@ -406,23 +322,23 @@
           </div>
           <div class="row">
             <div class="col-md-4" data-aos="fade-left"  data-aos-delay="100">
-              <div class="text-center px-0 px-sm-3 mb-4 mb-md-0">
-                <i class="fa-solid fa-headset fa-3x text-primary"></i>
-                <h4 class="my-4">Our Support Center</h4>
+              <div class="text-center px-0 px-sm-3 mb-4 mb-md-0" style="background: #020B1B; padding: 30px;">
+                <i class="fa-solid fa-headset fa-3x text-white"></i>
+                <h4 class="my-4 text-white">Our Support Center</h4>
                 <p class="mb-0">For those of you who are serious about having more, doing more, giving more and being more, success is achievable.</p>
               </div>
             </div>
             <div class="col-md-4" data-aos="fade-up"  data-aos-delay="200">
-              <div class="text-center px-0 px-sm-3 mb-4 mb-md-0">
-                <i class="fa-solid fa-person-chalkboard fa-3x text-primary"></i>
-                <h4 class="my-4">Chat To Us Online</h4>
+              <div class="text-center px-0 px-sm-3 mb-4 mb-md-0" style="background: #020B1B; padding: 30px;">
+                <i class="fa-solid fa-person-chalkboard fa-3x text-white"></i>
+                <h4 class="my-4 text-white">Chat To Us Online</h4>
                 <p class="mb-0">The first thing to remember about success is that it is a process – nothing more, nothing less. There is really no magic.</p>
               </div>
             </div>
-            <div class="col-md-4" data-aos="fade-right">
-              <div class="text-center px-0 px-sm-3"  data-aos-delay="300">
-                <i class="fa-solid fa-stopwatch fa-3x text-primary"></i>
-                <h4 class="my-4">Education Hours</h4>
+            <div class="col-md-4" data-aos="fade-right" data-aos-delay="300">
+              <div class="text-center px-0 px-sm-3"  data-aos-delay="300" style="background: #020B1B; padding: 30px;">
+                <i class="fa-solid fa-stopwatch fa-3x text-white"></i>
+                <h4 class="my-4 text-white">Education Hours</h4>
                 <p class="mb-0">Monday to Friday : 10 am – 7 pm.<br> Saturday : 9 am – 1 pm. <br>Sunday : Closed</p>
               </div>
             </div>
@@ -452,9 +368,9 @@
     <!--=================================
     Footer -->
     <footer class="position-relative">
-      <div class="footer_shape">
+      <!-- <div class="footer_shape">
         <img src="../Assets/images/footer-bg.webp" class="w-100" alt="foot-top">
-      </div>
+      </div> -->
       <div class="footer_wrapper" style="background: #1a1a1a;">
         <div class="container-md pt-5">
           <div class="row pb-5 pt_80 bottom_line position-relative">
