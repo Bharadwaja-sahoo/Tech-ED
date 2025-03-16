@@ -1,7 +1,3 @@
-// setTimeout(function () {
-//   document.getElementById('loader').style.display = 'none';
-//   document.body.classList.remove('loading');
-// }, 2000);
 window.onload = function () {
   AOS.init();
   document.getElementById('loader').style.display = 'none';
