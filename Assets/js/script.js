@@ -6,6 +6,15 @@ window.onload = function () {
   AOS.refresh();
 };
 
+document.addEventListener('contextmenu' , function(e){
+  e.preventDefault();
+})
+
+document.onkeydown = function(e) {
+  if(e.keyCode == 123 || (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charAt(0))){
+      return false;
+  }
+};
 
 function isNumberKey(event) {
   const charCode = event.which || event.keyCode;
