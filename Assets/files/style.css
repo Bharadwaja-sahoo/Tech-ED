@@ -1830,7 +1830,9 @@ a.text-dark:hover {
     display: inline-block;
     width: 100%;
     background: #04042c;
-    color: #ffffff; }
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px; }
     .accordion > .card .card-header .btn:after {
       font-family: "Font Awesome 5 Free";
       position: absolute;
@@ -1838,7 +1840,8 @@ a.text-dark:hover {
       right: 25px;
       -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
-      content: "\f068"; }
+      content: "\f068";
+      margin-top: 10px; }
   .accordion > .card .card-header .btn.collapsed {
     background: none;
     color: #1c1a1f; }
@@ -3629,7 +3632,7 @@ ul.list {
     color: #04042c; }
 
 .header.default-transparent.default-transparent-03 .woo-action ul li.cart .dropdown-toggle .cart-icon i {
-  color: #04042c; }
+  color: #ffffff; }
   .header.default-transparent.default-transparent-03 .woo-action ul li.cart .dropdown-toggle .cart-icon i:hover {
     color: #ffffff; }
 
